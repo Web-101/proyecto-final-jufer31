@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuferMovie</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- encabezado nav -->
+  <nav>
+    <a href="#" class="logo">
+      <div class="logo-diamond"></div>
+      JUFERMOVIE
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#" class="active">Inicio</a></li>
+      <li><a href="#">Explorar</a></li>
+      <li><a href="#">Agenda</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <span class="nav-icon">&#128269;</span>
+      <div class="nav-user">
+        <div class="avatar">F</div>
+        <span>Perfil</span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- banner-->
+  <section class="banner">
+    <div class="banner-content">
+      <div class="banner-label">
+        <span class="badge badge-cyan">ESTRENO</span>
+        <span class="badge badge-gray">Film Destacado</span>
+      </div>
+
+      <h1 class="banner-title">Blade Runner</h1>
+      <span class="banner-year">2099</span>
+
+      <p class="banner-desc">
+        En una Neo-Los Ángeles del futuro, un nuevo cazador de replicantes
+        debe confrontar su propia humanidad mientras persigue a una nueva
+        generación de androides perfectos.
+      </p>
+
+      <div class="banner-meta">
+        <span><span class="star">&#9733;</span> 9.1</span>
+        <span>&#9201; 2h 28m</span>
+        <span>Sci-Fi · Cyberpunk</span>
+      </div>
+
+      <div class="banner-actions">
+        <button class="btn-primary">
+          &#127915; Comprar Entradas
+        </button>
+        <div class="showtimes">
+          <div class="time-pill">18:00</div>
+          <div class="time-pill">20:30</div>
+          <div class="time-pill">23:00</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner-img">
+      <img
+        src="img/blade-runner-2099.png"
+        alt="Blade Runner 2099"
+      />
+      <div class="banner-img-overlay"></div>
+    </div>
+  </section>
+
+  <!-- Menu categorias -->
+  <div class="menu-categorias">
+    <div class="tab active">En Cartelera</div>
+    <div class="tab">Fantasy</div>
+    <div class="tab">Sci-Fi</div>
+    <div class="tab">Próximamente</div>
+  </div>
+
+  <!-- seccion cartelera -->
+  <section class="section">
+    <div class="section-header">
+      <h2 class="section-title">En Cartelera</h2>
+      <a href="#" class="see-all">Ver todo &rsaquo;</a>
+    </div>
+
+    <div class="movie-grid">
+
+      <!-- Película 1 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/blade-runner-2099.png" alt="Blade Runner 2099" />
+          <span class="card-tag" style="background:#00f5ff; color:#050810;">ESTRENO</span>
+          <span class="card-rating">&#9733; 9.1</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Blade Runner 2099</p>
+          <p class="card-genre">Sci-Fi · Cyberpunk</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 28m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 2 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/dune-parte-tres.png" alt="Dune Parte Tres" />
+          <span class="card-tag" style="background:#9d00ff; color:#fff;">IMAX</span>
+          <span class="card-rating">&#9733; 8.9</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Dune: Parte Tres</p>
+          <p class="card-genre">Sci-Fi · Épico</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 52m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 3 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/the-witcher-caos-y-ley.png" alt="The Witcher" />
+          <span class="card-tag" style="background:#ff4400; color:#fff;">4K</span>
+          <span class="card-rating">&#9733; 8.6</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">The Witcher: Caos y Ley</p>
+          <p class="card-genre">Dark Fantasy</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 15m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 4 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/avatar-fuego-y-ceniza.png" alt="Avatar" />
+          <span class="card-tag" style="background:#00aaff; color:#fff;">3D</span>
+          <span class="card-rating">&#9733; 8.4</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Avatar: Fuego y Ceniza</p>
+          <p class="card-genre">Sci-Fi · Aventura</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 3h 05m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       SEGUNDA FILA DE PELÍCULAS
+       ===================== -->
+  <section class="section" style="padding-top: 0;">
+    <div class="movie-grid">
+
+      <!-- Película 5 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/cyberpunk-edgerunners.png" alt="Cyberpunk Edgerunners" />
+          <span class="card-tag" style="background:#00f5ff; color:#050810;">ESTRENO</span>
+          <span class="card-rating">&#9733; 9.2</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Cyberpunk: Edgerunners</p>
+          <p class="card-genre">Sci-Fi · Cyberpunk</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 1h 48m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 6 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/tron-renegade.png" alt="Tron Renegade" />
+          <span class="card-tag" style="background:#9d00ff; color:#fff;">IMAX</span>
+          <span class="card-rating">&#9733; 9.0</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Tron: Renegade</p>
+          <p class="card-genre">Sci-Fi · Acción</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 10m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 7 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/shadow-bone-el-fin.png" alt="Shadow and Bone" />
+          <span class="card-tag" style="background:#ff0066; color:#fff;">NEW</span>
+          <span class="card-rating">&#9733; 8.1</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">Shadow &amp; Bone: El Fin</p>
+          <p class="card-genre">Dark Fantasy</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 20m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Película 8 -->
+      <div class="movie-card">
+        <div class="card-img">
+          <img src="img/the-dark-tower-renacido.png" alt="The Dark Tower" />
+          <span class="card-tag" style="background:#ffaa00; color:#050810;">TOP</span>
+          <span class="card-rating">&#9733; 7.9</span>
+        </div>
+        <div class="card-body">
+          <p class="card-title">The Dark Tower: Renacido</p>
+          <p class="card-genre">Dark Fantasy</p>
+          <div class="card-footer">
+            <span class="card-duration">&#9201; 2h 35m</span>
+            <div class="card-btns">
+              <button class="btn-sm btn-info">Info</button>
+              <button class="btn-sm btn-buy">Buy</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- =====================
+       FOOTER
+       ===================== -->
+  <footer>
+    <a href="#" class="footer-logo">
+      <div class="logo-diamond" style="width:10px; height:10px;"></div>
+      JUFERMOVIE
+    </a>
+
+    <ul class="footer-links">
+      <li><a href="#">Tour Bar</a></li>
+      <li><a href="#">Películas</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+
+    <span class="footer-copy">© 2025 JuferMovie · Todos los derechos reservados</span>
+  </footer>
+
+</body>
+</html>
