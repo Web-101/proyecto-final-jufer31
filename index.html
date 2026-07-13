@@ -3,284 +3,245 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>JuferMovie</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>JuferMovie - Cartelera</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- encabezado nav -->
+  <!-- BARRA DE NAVEGACION -->
   <nav>
-    <a href="#" class="logo">
-      <div class="logo-diamond"></div>
-      JUFERMOVIE
+    <a href="index.html" class="logo">
+      <img src="img\logo.png" alt="JuferMovie" style="height:32px;" />
     </a>
-
-    <ul class="nav-links">
-      <li><a href="#" class="active">Inicio</a></li>
+    <ul class="nav-enlaces">
+      <li><a href="index.html" class="activo">Inicio</a></li>
       <li><a href="#">Explorar</a></li>
       <li><a href="#">Agenda</a></li>
     </ul>
-
-    <div class="nav-right">
-      <span class="nav-icon">&#128269;</span>
-      <div class="nav-user">
-        <div class="avatar">F</div>
-        <span>Perfil</span>
-      </div>
+    <div class="nav-derecha">
+      <div class="perfil-avatar">F</div>
     </div>
   </nav>
 
-  <!-- banner-->
+  <!-- BANNER PELICULA DESTACADA -->
   <section class="banner">
-    <div class="banner-content">
-      <div class="banner-label">
-        <span class="badge badge-cyan">ESTRENO</span>
-        <span class="badge badge-gray">Film Destacado</span>
+    <div>
+      <div class="banner-etiqueta">
+        <span class="etiqueta etiqueta-cyan">ESTRENO</span>
+        <span class="etiqueta etiqueta-gris">Film Destacado</span>
       </div>
-
-      <h1 class="banner-title">Blade Runner</h1>
-      <span class="banner-year">2099</span>
-
-      <p class="banner-desc">
-        En una Neo-Los Ángeles del futuro, un nuevo cazador de replicantes
+      <h1 class="banner-titulo">Blade Runner</h1>
+      <span class="banner-anio">2099</span>
+      <p class="banner-descripcion">
+        En una Neo-Los Angeles del futuro, un nuevo cazador de replicantes
         debe confrontar su propia humanidad mientras persigue a una nueva
-        generación de androides perfectos.
+        generacion de androides perfectos.
       </p>
-
       <div class="banner-meta">
-        <span><span class="star">&#9733;</span> 9.1</span>
+        <span><span class="estrella">&#9733;</span> 9.1</span>
         <span>&#9201; 2h 28m</span>
         <span>Sci-Fi · Cyberpunk</span>
       </div>
-
-      <div class="banner-actions">
-        <button class="btn-primary">
-          &#127915; Comprar Entradas
-        </button>
-        <div class="showtimes">
-          <div class="time-pill">18:00</div>
-          <div class="time-pill">20:30</div>
-          <div class="time-pill">23:00</div>
+      <div class="banner-acciones">
+        <a href="detalle.html?id=1" class="boton-principal">&#127915; Comprar Entradas</a>
+        <div class="horarios">
+          <div class="horario-pill">18:00</div>
+          <div class="horario-pill">20:30</div>
+          <div class="horario-pill">23:00</div>
         </div>
       </div>
     </div>
-
-    <div class="banner-img">
-      <img
-        src="img/blade-runner-2099.png"
-        alt="Blade Runner 2099"
-      />
-      <div class="banner-img-overlay"></div>
+    <div class="banner-imagen">
+      <img src="img/blade-runner-2099.png" alt="Blade Runner 2099" />
+      <div class="banner-imagen-overlay"></div>
     </div>
   </section>
 
-  <!-- Menu categorias -->
+  <!-- MENU DE CATEGORIAS -->
   <div class="menu-categorias">
-    <div class="tab active">En Cartelera</div>
-    <div class="tab">Fantasy</div>
-    <div class="tab">Sci-Fi</div>
-    <div class="tab">Próximamente</div>
+    <div class="pestania activo">En Cartelera</div>
+    <div class="pestania">Fantasy</div>
+    <div class="pestania">Sci-Fi</div>
+    <div class="pestania">Proximamente</div>
   </div>
 
-  <!-- seccion cartelera -->
-  <section class="section">
-    <div class="section-header">
-      <h2 class="section-title">En Cartelera</h2>
-      <a href="#" class="see-all">Ver todo &rsaquo;</a>
+  <!-- GRILLA DE PELICULAS -->
+  <section class="seccion">
+    <div class="seccion-cabecera">
+      <h2 class="seccion-titulo">En Cartelera</h2>
+      <a href="#" class="ver-todo">Ver todo ›</a>
     </div>
+    <div class="grilla-peliculas">
 
-    <div class="movie-grid">
-
-      <!-- Película 1 -->
-      <div class="movie-card">
-        <div class="card-img">
+      <a href="detalle.html?id=1" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
           <img src="img/blade-runner-2099.png" alt="Blade Runner 2099" />
-          <span class="card-tag" style="background:#00f5ff; color:#050810;">ESTRENO</span>
-          <span class="card-rating">&#9733; 9.1</span>
+          <span class="tarjeta-etiqueta" style="background:#00f5ff;color:#050810;">ESTRENO</span>
+          <span class="tarjeta-calificacion">&#9733; 9.1</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Blade Runner 2099</p>
-          <p class="card-genre">Sci-Fi · Cyberpunk</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 28m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Blade Runner 2099</p>
+          <p class="tarjeta-genero">Sci-Fi · Cyberpunk</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 28m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=1'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 2 -->
-      <div class="movie-card">
-        <div class="card-img">
-          <img src="img/dune-parte-tres.png" alt="Dune Parte Tres" />
-          <span class="card-tag" style="background:#9d00ff; color:#fff;">IMAX</span>
-          <span class="card-rating">&#9733; 8.9</span>
+      <a href="detalle.html?id=2" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
+          <img src="img/dune-parte-tres.png" alt="Dune: Parte Tres" />
+          <span class="tarjeta-etiqueta" style="background:#9d00ff;color:#fff;">IMAX</span>
+          <span class="tarjeta-calificacion">&#9733; 8.9</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Dune: Parte Tres</p>
-          <p class="card-genre">Sci-Fi · Épico</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 52m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Dune: Parte Tres</p>
+          <p class="tarjeta-genero">Sci-Fi · Epico</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 52m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=2'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 3 -->
-      <div class="movie-card">
-        <div class="card-img">
+      <a href="detalle.html?id=3" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
           <img src="img/the-witcher-caos-y-ley.png" alt="The Witcher" />
-          <span class="card-tag" style="background:#ff4400; color:#fff;">4K</span>
-          <span class="card-rating">&#9733; 8.6</span>
+          <span class="tarjeta-etiqueta" style="background:#ff4400;color:#fff;">4K</span>
+          <span class="tarjeta-calificacion">&#9733; 8.6</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">The Witcher: Caos y Ley</p>
-          <p class="card-genre">Dark Fantasy</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 15m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">The Witcher: Caos y Ley</p>
+          <p class="tarjeta-genero">Dark Fantasy</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 15m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=3'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 4 -->
-      <div class="movie-card">
-        <div class="card-img">
+      <a href="detalle.html?id=4" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
           <img src="img/avatar-fuego-y-ceniza.png" alt="Avatar" />
-          <span class="card-tag" style="background:#00aaff; color:#fff;">3D</span>
-          <span class="card-rating">&#9733; 8.4</span>
+          <span class="tarjeta-etiqueta" style="background:#00aaff;color:#fff;">3D</span>
+          <span class="tarjeta-calificacion">&#9733; 8.4</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Avatar: Fuego y Ceniza</p>
-          <p class="card-genre">Sci-Fi · Aventura</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 3h 05m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Avatar: Fuego y Ceniza</p>
+          <p class="tarjeta-genero">Sci-Fi · Aventura</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 3h 05m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=4'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-    </div>
-  </section>
-
-  <!-- =====================
-       SEGUNDA FILA DE PELÍCULAS
-       ===================== -->
-  <section class="section" style="padding-top: 0;">
-    <div class="movie-grid">
-
-      <!-- Película 5 -->
-      <div class="movie-card">
-        <div class="card-img">
-          <img src="img/cyberpunk-edgerunners.png" alt="Cyberpunk Edgerunners" />
-          <span class="card-tag" style="background:#00f5ff; color:#050810;">ESTRENO</span>
-          <span class="card-rating">&#9733; 9.2</span>
+      <a href="detalle.html?id=5" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
+          <img src="img/cyberpunk-edgerunners.png" alt="Cyberpunk" />
+          <span class="tarjeta-etiqueta" style="background:#00f5ff;color:#050810;">ESTRENO</span>
+          <span class="tarjeta-calificacion">&#9733; 9.2</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Cyberpunk: Edgerunners</p>
-          <p class="card-genre">Sci-Fi · Cyberpunk</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 1h 48m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Cyberpunk: Edgerunners</p>
+          <p class="tarjeta-genero">Sci-Fi · Cyberpunk</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 1h 48m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=5'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 6 -->
-      <div class="movie-card">
-        <div class="card-img">
-          <img src="img/tron-renegade.png" alt="Tron Renegade" />
-          <span class="card-tag" style="background:#9d00ff; color:#fff;">IMAX</span>
-          <span class="card-rating">&#9733; 9.0</span>
+      <a href="detalle.html?id=6" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
+          <img src="img/tron-renegade.png" alt="Tron" />
+          <span class="tarjeta-etiqueta" style="background:#9d00ff;color:#fff;">IMAX</span>
+          <span class="tarjeta-calificacion">&#9733; 9.0</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Tron: Renegade</p>
-          <p class="card-genre">Sci-Fi · Acción</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 10m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Tron: Renegade</p>
+          <p class="tarjeta-genero">Sci-Fi · Accion</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 10m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=6'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 7 -->
-      <div class="movie-card">
-        <div class="card-img">
+      <a href="detalle.html?id=7" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
           <img src="img/shadow-bone-el-fin.png" alt="Shadow and Bone" />
-          <span class="card-tag" style="background:#ff0066; color:#fff;">NEW</span>
-          <span class="card-rating">&#9733; 8.1</span>
+          <span class="tarjeta-etiqueta" style="background:#ff0066;color:#fff;">NEW</span>
+          <span class="tarjeta-calificacion">&#9733; 8.1</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">Shadow &amp; Bone: El Fin</p>
-          <p class="card-genre">Dark Fantasy</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 20m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">Shadow &amp; Bone: El Fin</p>
+          <p class="tarjeta-genero">Dark Fantasy</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 20m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=7'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
-      <!-- Película 8 -->
-      <div class="movie-card">
-        <div class="card-img">
+      <a href="detalle.html?id=8" class="tarjeta-pelicula">
+        <div class="tarjeta-imagen">
           <img src="img/the-dark-tower-renacido.png" alt="The Dark Tower" />
-          <span class="card-tag" style="background:#ffaa00; color:#050810;">TOP</span>
-          <span class="card-rating">&#9733; 7.9</span>
+          <span class="tarjeta-etiqueta" style="background:#ffaa00;color:#050810;">TOP</span>
+          <span class="tarjeta-calificacion">&#9733; 7.9</span>
         </div>
-        <div class="card-body">
-          <p class="card-title">The Dark Tower: Renacido</p>
-          <p class="card-genre">Dark Fantasy</p>
-          <div class="card-footer">
-            <span class="card-duration">&#9201; 2h 35m</span>
-            <div class="card-btns">
-              <button class="btn-sm btn-info">Info</button>
-              <button class="btn-sm btn-buy">Buy</button>
+        <div class="tarjeta-cuerpo">
+          <p class="tarjeta-titulo">The Dark Tower: Renacido</p>
+          <p class="tarjeta-genero">Dark Fantasy</p>
+          <div class="tarjeta-pie">
+            <span class="tarjeta-duracion">&#9201; 2h 35m</span>
+            <div class="tarjeta-botones">
+              <button class="boton-sm boton-info" onclick="event.preventDefault()">Info</button>
+              <button class="boton-sm boton-comprar" onclick="event.preventDefault();window.location.href='detalle.html?id=8'">Buy</button>
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
     </div>
   </section>
 
-  <!-- =====================
-       FOOTER
-       ===================== -->
+  <!-- PIE DE PAGINA -->
   <footer>
-    <a href="#" class="footer-logo">
-      <div class="logo-diamond" style="width:10px; height:10px;"></div>
-      JUFERMOVIE
+    <a href="index.html" class="pie-logo">
+      <img src="img/logo.png" alt="JuferMovie" style="height:24px;" />
     </a>
-
-    <ul class="footer-links">
+    <ul class="pie-enlaces">
       <li><a href="#">Tour Bar</a></li>
-      <li><a href="#">Películas</a></li>
+      <li><a href="#">Peliculas</a></li>
       <li><a href="#">Servicios</a></li>
       <li><a href="#">Contacto</a></li>
     </ul>
-
-    <span class="footer-copy">© 2025 JuferMovie · Todos los derechos reservados</span>
+    <span class="pie-derechos">© 2025 JuferMovie · Todos los derechos reservados</span>
   </footer>
 
+  <script src="js/index.js"></script>
 </body>
 </html>
