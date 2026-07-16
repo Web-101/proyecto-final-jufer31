@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuferMovie - ¡Confirmado!</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+
+  <nav>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="JuferMovie" style="height:32px;" /></a>
+    <ul class="nav-enlaces">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Explorar</a></li>
+      <li><a href="#">Agenda</a></li>
+    </ul>
+    <div class="nav-derecha">
+      <div class="perfil-avatar">F</div>
+    </div>
+  </nav>
+
+  <div class="confirmacion-contenedor">
+
+    <div class="confirmacion-icono">&#10003;</div>
+    <h2 class="confirmacion-titulo">¡Confirmado!</h2>
+    <p class="confirmacion-subtitulo">Tus entradas han sido reservadas</p>
+
+    <!-- Ticket -->
+    <div class="ticket">
+      <div class="ticket-cabecera">
+        <img src="img/logo.png" alt="JuferMovie" style="height:20px;" />
+      </div>
+
+      <div class="ticket-cuerpo">
+        <!-- Info película -->
+        <div class="ticket-pelicula-contenedor">
+          <img id="ticket-imagen" src="" alt="" class="ticket-imagen-mini" />
+          <div>
+            <p class="ticket-pelicula" id="ticket-titulo">-</p>
+            <p class="ticket-sala">Nexus Forum · Sala 7</p>
+          </div>
+        </div>
+
+        <div class="ticket-grilla">
+          <div class="ticket-dato">
+            <span class="ticket-dato-etiqueta">FUNCIÓN</span>
+            <span class="ticket-dato-valor" id="ticket-funcion">-</span>
+          </div>
+          <div class="ticket-dato">
+            <span class="ticket-dato-etiqueta">ASIENTOS</span>
+            <span class="ticket-dato-valor" id="ticket-asientos">-</span>
+          </div>
+          <div class="ticket-dato">
+            <span class="ticket-dato-etiqueta">ENTRADAS</span>
+            <span class="ticket-dato-valor" id="ticket-entradas">-</span>
+          </div>
+          <div class="ticket-dato">
+            <span class="ticket-dato-etiqueta">TOTAL</span>
+            <span class="ticket-dato-valor cyan" id="ticket-total">-</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="ticket-qr-contenedor">
+        <div class="qr-simulado-sm">
+          <div class="qr-interno-sm"></div>
+        </div>
+        <p class="ticket-codigo" id="ticket-codigo">Código: JUFER-0000</p>
+      </div>
+
+      <div class="ticket-pie">
+        <span class="ticket-total-etiqueta">Total Pagado</span>
+        <span class="ticket-total-valor" id="ticket-total-footer">Bs. 0</span>
+      </div>
+    </div>
+
+    <a href="index.html" class="boton-secundario" style="display:block; width:100%; padding:14px; text-align:center;">
+    
+    </a>
+
+  </div>
+
+ 
+  <footer>
+    <a href="index.html" class="pie-logo"><img src="img/logo.png" alt="JuferMovie" style="height:24px;" /></a>
+    <ul class="pie-enlaces">
+      <li><a href="#">Tour Bar</a></li>
+      <li><a href="#">Películas</a></li>
+      <li><a href="#">Servicios</a></li>
+      <li><a href="#">Contacto</a></li>
+    </ul>
+    <span class="pie-derechos">© 2025 JuferMovie · Todos los derechos reservados</span>
+  </footer>
+
+  <script src="js/confirmacion.js"></script>
+</body>
+</html>
