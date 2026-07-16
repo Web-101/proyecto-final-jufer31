@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -88,4 +89,96 @@
 
   <script src="js/asientos.js"></script>
 </body>
+=======
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JuferMovie - Selección de Asientos</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav>
+    <a href="index.html" class="logo"><img src="img/logo.png" alt="JuferMovie" style="height:32px;" /></a>
+    <ul class="nav-enlaces">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="#">Explorar</a></li>
+      <li><a href="#">Agenda</a></li>
+    </ul>
+    <div class="nav-derecha">
+      <div class="perfil-avatar">F</div>
+    </div>
+  </nav>
+
+  <!-- BACK -->
+  <a href="javascript:history.back()" class="boton-volver">&#8592; Volver a Asientos</a>
+
+  <!-- CABECERA SALA -->
+  <div class="sala-cabecera">
+    <div class="sala-info-contenedor">
+      <img id="sala-imagen" src="" alt="" class="sala-imagen-mini" />
+      <div>
+        <p class="sala-pelicula" id="sala-titulo">Cargando...</p>
+        <p class="sala-funcion" id="sala-funcion"></p>
+      </div>
+    </div>
+    <!-- Pills de horarios -->
+    <div class="sala-horarios" id="sala-horarios"></div>
+  </div>
+
+  <!-- PANTALLA -->
+  <div class="pantalla-contenedor">
+    <div class="pantalla"></div>
+    <p class="pantalla-etiqueta">Pantalla / Screen</p>
+
+    <!-- Grid de asientos -->
+    <div class="asientos-grilla" id="asientos-grilla">
+      <div class="cargando">
+        <div class="cargando-spinner"></div>
+        Cargando sala...
+      </div>
+    </div>
+
+    <!-- Leyenda -->
+    <div class="leyenda">
+      <div class="leyenda-elemento">
+        <div class="leyenda-cuadro disponible"></div>
+        Disponible
+      </div>
+      <div class="leyenda-elemento">
+        <div class="leyenda-cuadro ocupado"></div>
+        Ocupado
+      </div>
+      <div class="leyenda-elemento">
+        <div class="leyenda-cuadro seleccionado"></div>
+        Tu selección
+      </div>
+    </div>
+  </div>
+
+  <!-- RESUMEN STICKY -->
+  <div class="resumen-barra">
+    <div class="resumen-superior">
+      <div>
+        <p class="resumen-etiqueta">RESUMEN</p>
+        <div class="resumen-pills" id="resumen-pills"></div>
+        <p class="resumen-entradas" id="resumen-entradas">0 entradas</p>
+      </div>
+      <div class="resumen-total-contenedor">
+        <p class="resumen-etiqueta">TOTAL</p>
+        <p class="resumen-total" id="resumen-total">Bs. 0</p>
+      </div>
+    </div>
+    <button class="boton-principal" id="btn-confirmar"
+      style="width:100%; padding:14px; opacity:0.4; cursor:not-allowed;" disabled>
+      CONFIRMAR
+    </button>
+  </div>
+
+  <script src="js/asientos.js"></script>
+</body>
+>>>>>>> 06c78d31bb266296743b860f2af77be6f0c9c9a1
 </html>
